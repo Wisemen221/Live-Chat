@@ -1,0 +1,51 @@
+//profile layout
+.profile_wrapper_background
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.5)
+    z-index: 100
+    transition: all 0.4 ease
+    .profile_container
+        background-color: $white
+        text-align: center
+        border-radius: 0
+        width: 100%
+        height: 100%
+        padding: 6.0625rem 5.3125rem 5rem 5.3125rem
+        transition: all 0.4 ease
+        .user_picture
+            font-size: 7.6875rem
+            color: $light_blue
+        h3
+            margin: 0.5625rem auto 1.75rem auto
+            font-size: 1.1625rem
+            font-weight: 500
+        .change_users_email_form
+            .change_user_email
+                width: 100%
+                border-radius: 1.875rem
+                border: 0.0625rem solid $light_blue
+                font-size: 0.9375rem
+                font-weight: 500
+                padding: 0.625rem 0.8125rem
+                text-align: center
+                margin-bottom: 1.875rem
+                &::placeholder
+                    color: $light_grey_2
+                    text-align: center
+            .update_button
+                margin-bottom: 10rem
+        .close_button
+            background-color: $white
+            color: $black
+            opacity: 0.5
+            font-weight: 600
+            transition: 0.15s ease
+            &:hover
+                opacity: 1

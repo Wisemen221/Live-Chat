@@ -1,0 +1,41 @@
+//chat box layout
+.chat_page_wrapper .chat_box_wrapper
+    width: 100%
+    transition: all 0.4s ease
+    .chat_box_form
+        background-color: $white
+        display: flex
+        padding: 1.625rem 1.6875rem
+        transition: all 0.4s ease
+        .chat_box
+            -webkit-appearance: none
+            -moz-appearance: none
+            appearance: none
+            outline: none
+            box-shadow: none
+            background-color: $white
+            border: 0.0625rem solid $light_blue
+            border-radius: 1.875rem
+            width: 100%
+            resize: none
+            font-size: 0.9375rem
+            font-weight: 500
+            padding: 0.625rem 0.8125rem
+            margin-right: 0.6875rem
+            &::placeholder
+                color: $light_grey_2
+            &:focus
+                color: $light_grey_2
+                box-shadow: none
+            &:focus::placeholder
+                opacity: 0.4
+            &:not(:focus)
+                color: $light_grey_2
+            &:invalid
+                box-shadow: none
+        .submit_message_button
+            display: flex
+            justify-content: center
+            align-items: center
+            .submit_message_icon
+                margin-right: 0.3125rem

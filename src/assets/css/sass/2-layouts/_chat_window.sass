@@ -1,0 +1,39 @@
+//chat window layout
+.chat_page_wrapper .chat_window_wrapper
+    width: 100%
+    flex-grow: 1
+    padding: 0.625rem
+    overflow-y: auto
+    transition: all 0.4s ease
+    .message_wrapper
+        margin: 1.25rem 0
+        display: flex
+        .user_time_wrapper
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            align-items: center
+            min-width: 3.75rem
+            max-width: 3.75rem
+            text-align: center
+            color: $dark_blue
+            .fa-user
+                font-size: 1.875rem
+        .user_message
+            height: auto
+            line-height: 1.375rem
+            padding: 0.625rem 0.8125rem
+            border-radius: 0.3125rem
+            background-color: $dark_blue
+            color: $white
+            transition: all 0.4s ease
+            .message_top
+                display: flex
+                justify-content: space-between
+                .name
+                    margin-right: 0.625rem
+                .created-at
+                    font-size: 0.625rem
+            .message_bottom
+                padding-top: 0.625rem
+                text-align: justify

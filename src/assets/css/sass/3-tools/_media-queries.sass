@@ -1,0 +1,57 @@
+//media queires tool
+@media screen and (min-width: 75rem)
+    .home_wrapper
+        display: flex
+        flex-direction: row-reverse
+        .logo_wrapper .background
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+            height: 100%
+            .logo
+                display: flex
+                justify-content: center
+                align-items: center
+                margin: 0
+                width: 100%
+                height: auto
+                svg
+                    width: 80%
+                    height: 80%
+        .credentials_wrapper
+            display: flex
+            justify-content: center
+            align-items: center
+            .login_container
+                width: 100%
+                h1
+                    font-size: 1.875rem
+                .app_details
+                    font-size: 1.125rem
+    .chat_page_wrapper
+        #chat_window, .chat_box_wrapper
+            padding: 0 6.875rem 0 19.375rem
+        .navbar_wrapper
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            flex-direction: column
+            width: 12.5rem
+            .user_picture_wrapper
+                flex-direction: column
+                .user_picture
+                    margin-left: 0.5rem
+                .users_name
+                    margin-top: 0.3125rem
+                    font-size: 0.76375rem
+@media screen and (min-width: 37.5rem)
+    .chat_page_wrapper .chat_window_wrapper
+        padding: 0.625rem 2.5rem
+    .chat_page_wrapper .chat_box_wrapper .chat_box_form
+        padding: 1.625rem 3.5625rem
+    .chat_page_wrapper .navbar_wrapper
+        padding: 1.5rem 3.5625rem
+@media screen and (min-width: 29.6875rem)
+    .chat_page_wrapper .profile_wrapper_background .profile_container
+        width: 23.4375rem
+        height: 41.6875rem
+        border-radius: 1.25rem
