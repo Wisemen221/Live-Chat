@@ -3,7 +3,7 @@
     <div class="error" v-if="error">
       {{ error }}
     </div>
-    <div v-if="formattedDocuments" ref="messages" class="messages">
+    <div v-if="formattedDocuments" ref="messages" class="messages" v-cloak>
       <div v-for="doc in formattedDocuments" :key="doc.id" class="message_wrapper">
         
         <div class="user_time_wrapper">

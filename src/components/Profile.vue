@@ -1,6 +1,6 @@
 <template>
   <div class="profile_wrapper_background">
-      <div class="profile_container">
+      <div class="profile_container" v-if="user" v-cloak>
             <i class="user_picture fas fa-user"></i>
             <h3>{{ user.email }}</h3>
             <form class="change_users_email_form">

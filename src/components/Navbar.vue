@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar_wrapper" v-if="user">
-    <div @click="open_profile" class="user_picture_wrapper">
+    <div @click="open_profile" class="user_picture_wrapper" v-if="user" v-cloak>
       <i class="user_picture fas fa-user"></i>
       <span class="users_name">Hi, {{ user.displayName }}</span>
     </div>
